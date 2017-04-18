@@ -1,0 +1,31 @@
+<nav class="navbar fixed-top navbar-toggleable-md navbar-dark bg-ideabook">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <strong>
+      <%= link_to "IdeaBook", home_path, class: 'navbar-brand' %>
+    </strong>
+    <div class="collapse navbar-collapse" id="navbarNav1">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <%= link_to 'Home', home_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Features', features_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contact', contact_path, class: 'nav-link' %>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" style="margin-right: 10px;">
+          <%= link_to 'Login', contact_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Register', contact_path, class: 'nav-link' %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

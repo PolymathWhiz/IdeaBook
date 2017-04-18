@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= render 'shared/css_links' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= render 'shared/header' %>
+  -<div class="container" style="margin-top: 50px;">
+  <%= yield %>  
+</div>
+  <%= render 'shared/footer' %>
+  <%= render 'shared/script_links' %>
+  </body>
+</html>
