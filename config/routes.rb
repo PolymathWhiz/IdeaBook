@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get '/features', to: 'index#features'
   get '/contact', to: 'index#contact'
   get '/privacy', to: 'index#privacy'
-  get '/signup', to: 'users#new'
+  get '/register', to: 'users#new'
 end
