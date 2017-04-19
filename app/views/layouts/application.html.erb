@@ -9,11 +9,21 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="<%= controller.controller_name %>">
+
+  <noscript>
+    <h2>
+      Please enable JavaScript
+    </h2>
+    <p>
+        This platform requires JavaScript to function properly...
+    </p>
+  </noscript>
+
   <%= render 'shared/header' %>
-  -<div class="container" style="margin-top: 50px;">
-  <%= yield %>  
-</div>
+
+  <%= yield %>
+  
   <%= render 'shared/footer' %>
   <%= render 'shared/script_links' %>
   </body>

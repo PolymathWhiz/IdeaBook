@@ -1,10 +1,9 @@
 <!--Footer-->
 <footer class="page-footer center-on-small-only" style="background-color: #24292e !important;">
-
     <!--Copyright-->
     <div class="footer-copyright">
         <div class="container-fluid">
-           <span> © <%= @year %><a href=""> MapleRad. </a> Terms of Service | Privacy | Contact </span>
+           <span> © <%= @year %><a href=""> MapleRad. </a> Terms of Service | <%= link_to 'Privacy', privacy_path %> | <%= link_to 'Contact', contact_path %> </span>
         </div>
     </div>
 </footer>
