@@ -4,25 +4,24 @@
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="simple, idea, management, solution, ideabook, maplerad"/>
     <%= render 'shared/css_links' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body class="<%= controller.controller_name %>">
-
   <noscript>
     <h2> Please enable JavaScript </h2>
     <p>
         This platform requires JavaScript to function properly...
     </p>
   </noscript>
-
+ 
   <%= render 'shared/header' %>
 
   <%= yield %>
-  
+ 
   <%= render 'shared/footer' %>
-  <%= render 'shared/script_links' %>
   </body>
 </html>

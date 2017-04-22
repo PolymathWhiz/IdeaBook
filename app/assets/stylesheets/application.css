@@ -11,13 +11,22 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require mdb.min.css
+ *= require bootstrap.min.css
+ *= require style.css
+ *= require font-awesome
  *= require_self
  */
     
-  .bg-ideabook {
-    background-color: #24292e;
-  }
+    body {
+        font-family: Helvetica, sans-serif !important;
+        font-weight: normal !important;
+    }
     
-  footer.page-footer {
-    padding-top: 0px;
-  }
+    .bg-ideabook {
+        background-color: #24292e;
+    }
+    
+    footer.page-footer {
+        padding-top: 0px;
+    }
