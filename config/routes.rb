@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   get '/contact', to: 'index#contact'
   get '/privacy', to: 'index#privacy'
   get '/register', to: 'users#new'
+  post '/register', to: 'users#create'
+  get '/show', to: 'users#show'
+
+  resources :users
 end
