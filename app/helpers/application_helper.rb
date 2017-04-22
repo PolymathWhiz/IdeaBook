@@ -1,4 +1,5 @@
 module ApplicationHelper
+  
   def full_title(page_title = '')
     base_title = "IdeaBook"
     default_title = "IdeaBook - Save your ideas and change the world"
